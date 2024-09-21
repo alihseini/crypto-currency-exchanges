@@ -1,0 +1,134 @@
+.search-box{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+.search-box input{
+    width: 400px;
+    padding: 10px;
+    background: #b6b4b41f;
+    outline: none;
+    border: solid 2px #c2c2c2;
+    border-radius: 50px;
+    caret-color: #fff;
+    margin-bottom: 30px;
+    transition: all 0.1s;
+}
+.search-box input::placeholder{
+    color: rgb(202, 201, 201);
+}
+.search-box input:focus{
+    background: #b6b4b400;
+    box-shadow: 1px 1px 5px #fff;
+    box-shadow: -1px -1px 5px #fff;
+}
+.market-css{
+    width: 100%;
+    min-height: calc(54vh - 46px);
+    display: flex;
+    justify-content: center;
+}
+.name img{
+    width: 40px;
+    height: 40px;
+}
+.cards{
+    color: var(--color-text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+    margin: 20px auto;
+    background: #857a7a2e;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    box-sizing: border-box;
+}
+.name p{
+    font-weight: bolder;
+    margin-left: 50px;
+    font-size: 1rem;
+    width: 200px;
+}
+.name{
+    display: flex;
+    align-items: center;
+}
+.short{
+    width: 30px;
+}
+.price{
+    width: 100px;
+}
+.change{
+    color: var(--color-greent);
+    font-size: 0.8rem;
+    padding: 5px;
+    background: var(--color-green);
+    border-radius: 10px;
+    width: 50px;
+}
+.change-neg{
+    color: var(--color-redt);
+    font-size: 0.8rem;
+    padding: 5px;
+    background: var(--color-red);
+    border-radius: 10px;
+    width: 50px;
+}
+.market-cap{
+    width: 100px;
+}
+@media (max-width:1100px) {
+    .cards{
+        width: 650px;
+    }
+}
+@media (max-width:720px){
+    .name img{
+        width: 25px;
+        height: 25px;
+    }
+    .name p{
+        font-weight: bolder;
+        margin-left: 30px;
+        font-size: 0.7rem;
+        width: 70px;
+    }
+    .cards{
+        width: 350px;
+    }
+    .price{
+        font-size: 0.7rem;
+        width: 70px;
+    }
+    .market-cap{
+        display: none;
+    }
+    header{
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    .search-box input{
+        width: 250px;
+    }
+}
+@media (max-width:400px){
+    .cards{
+        width: 250px;
+        font-size: 0.6rem;
+    }
+    .name p{
+        margin-left: 15px;
+        font-size: 0.6rem;
+    }
+    .price{
+        font-size: 0.5rem;
+        width: 40px;
+    }
+    .search-box input{
+        width: 200px;
+    }
+}
